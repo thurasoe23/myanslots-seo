@@ -16,6 +16,8 @@
     <link rel="alternate" hreflang="x-default" href="https://myanslots.com/">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicon.ico">
 
     <!-- Robots -->
     <meta name="robots" content="index, follow">
@@ -203,26 +205,26 @@
 
 <body class="min-h-screen">
 
-    <!-- Header & Navigation -->
+       <!-- Header & Navigation -->
     <header class="bg-gray-900 shadow-xl sticky top-0 z-40">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <a href="/" class="flex items-center space-x-3">
                 <img src="assets/logo/Myan-slot-logo.webp" alt="Myanmar Slots Logo" class="h-12 w-auto">
             </a>
-            <nav class="hidden md:flex space-x-6">
-                <a href="#top-sites" class="text-gray-300 hover:text-yellow-400 transition duration-150 font-semibold">Top Sites</a>
-                <a href="#how-to-play" class="text-gray-300 hover:text-yellow-400 transition duration-150 font-semibold">How To Play</a>
-                <a href="#faq" class="text-gray-300 hover:text-yellow-400 transition duration-150 font-semibold">FAQ</a>
+                        <nav id="nav-menu" class="hidden md:flex items-center space-x-6 absolute md:static top-full left-0 right-0 md:right-auto md:top-auto bg-gray-900 md:bg-transparent p-4 md:p-0 flex-col md:flex-row z-50 w-full md:w-auto shadow-lg md:shadow-none md:space-y-0 space-y-2">
+                <a href="#top-sites" class="text-center text-gray-300 hover:text-yellow-400 transition duration-150 font-semibold py-3 md:py-0 px-4 md:px-0 block md:inline rounded-md md:rounded-none hover:bg-gray-800 md:hover:bg-transparent">Top Sites</a>
+                <a href="#how-to-play" class="text-center text-gray-300 hover:text-yellow-400 transition duration-150 font-semibold py-3 md:py-0 px-4 md:px-0 block md:inline rounded-md md:rounded-none hover:bg-gray-800 md:hover:bg-transparent">How To Play</a>
+                <a href="#faq" class="text-center text-gray-300 hover:text-yellow-400 transition duration-150 font-semibold py-3 md:py-0 px-4 md:px-0 block md:inline rounded-md md:rounded-none hover:bg-gray-800 md:hover:bg-transparent">FAQ</a>
             </nav>
             <div class="md:hidden">
-                <!-- Simple Mobile Menu Placeholder -->
-                <button class="text-white focus:outline-none p-2 rounded-md hover:bg-gray-800">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="text-white focus:outline-none p-2 rounded-md hover:bg-gray-800 transition duration-200" aria-label="Toggle menu">
+                    <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                 </button>
             </div>
         </div>
     </header>
-
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
@@ -529,7 +531,7 @@
                             <p class="py-4 text-gray-300 border-t border-gray-700">
                                 မြန်မာနိုင်ငံရှိ အွန်လိုင်းကာစီနိုများတွင် <strong>KBZPay၊ WavePay၊ ဘဏ်အကောင့်နှင့် ငွေထုတ်ခြင်း</strong> သို့မဟုတ် <strong>ငွေပေးချေမှုနည်းလမ်းများ</strong> ဖြင့် ငွေထုတ်နိုင်ပါတယ်။
                                 အနည်းဆုံးငွေထုတ်ပမာဏက <strong>၁၀,၀၀၀ ကျပ် မှ ၂၀,၀၀၀ ကျပ် အထိ</strong> ဖြစ်နိုင်ပြီး၊ တစ်နေ့လျှင် သို့မဟုတ် တစ်ကြိမ်လျှင် ငွေထုတ်အမြင့်ဆုံးပမာဏကတော့ ကာစီနို တစ်ခုနှင့် တစ်ခု အပေါ် မူတည်ပါတယ်။
-                                ပုံမှန်အားဖြင့် ငွေထုတ်ရန်အတည်ပြုချိန်က <strong>၁ ရက်မှ ၃ ရက်အတွင်း</strong> ကြာနိုင်သော်လဲ တချို့အချိန်များ၊ <strong>အထူးသဖြင့် (KYC) အတည်ပြုမူ လုပ်ဆောင်နေချိန်</strong>၊ အလုပ်ပိတ်ရက်များနှင့်၊ ကာစီနို သုံးစွဲသူများ များပြားသောအချိန်များတွင် အနည်းငယ် နှောင့်နှေးနိုင်ပါတယ်။
+                                ပုံမှန်အားဖြင့် ငွေထုတ်ရန်အတည်ပြုချိန်က <strong>၁ ရက်မှ ၃ ရက်အတွင်း</strong> ကြာနိုင်သော်လည်း တချို့အချိန်များ၊ <strong>အထူးသဖြင့် (KYC) အတည်ပြုမူ လုပ်ဆောင်နေချိန်</strong>၊ အလုပ်ပိတ်ရက်များနှင့်၊ ကာစီနို သုံးစွဲသူများ များပြားသောအချိန်များတွင် အနည်းငယ် နှောင့်နှေးနိုင်ပါတယ်။
                                 အမြန်ဆုံး ငွေထုတ်လိုပါက မိမိ ကိုယ်ပိုင်အချက်အလက် အတည်ပြုခြင်းကို သေချာလုပ်ဆောင်ထားပြီး  <strong>ငွေသွင်းခဲ့သည့်နည်းလမ်းအတိုင်းပဲ ငွေထုတ်ပါက အမြန်ဆန်ဆုံးဖြစ်သည်။</strong>
                             </p>
                         </div>
@@ -610,6 +612,42 @@
             }
         });
     });
+
+        // filepath: /Users/thurasoe/Documents/Coding/Steller Blue (ADM)/myanslots-seo/index.html
+    
+        // --- Mobile Menu Toggle Script ---
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+        const navLinks = navMenu.querySelectorAll('a');
+    
+        if (mobileMenuBtn && navMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const isHidden = navMenu.classList.contains('hidden');
+                
+                if (isHidden) {
+                    // Open menu
+                    navMenu.classList.remove('hidden');
+                    menuIcon.classList.add('hidden');
+                    closeIcon.classList.remove('hidden');
+                } else {
+                    // Close menu
+                    navMenu.classList.add('hidden');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                }
+            });
+    
+            // Close menu when a link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.add('hidden');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                });
+            });
+        }
     </script>
 </body>
 </html>
